@@ -111,3 +111,9 @@ Yukarıdaki 3 grafiğe baktığınızda, hesaplamadaki periyod büyüdükçe ort
 Amerika forex piyasasındali işlem hacminin tek başına %74 gibi işlem hacmine sahip. Diğer %26 tüm forex entrümanları arasında paylaşılıyor. Bizim para birimimiz bu dünyadaki işlem hacminin belkide en küçüklerinden birisi. Aslında forex işlemlerinin işlem hacminin nasıl hesaplandığını inceleyen başka bir dosyayı inceleyerek doğru anlamanızı sağlayabilirsiniz. 
 
 [Forex Piyasasını Etkileyen Faktörler](../forex/forex-piyasasi-işlem-hacmi-nasil-hesaplanir.md)
+
+Tüm ağırlıklı ortalama verilerinden anlaşılacağı üzere, periyot ortalamasın 30 olan grafiğin altına inen piyasa çigileri bize SELL, üstünde seyreden piyasalar için de BUY olarak değerlendirmemizi sağlayacaktır.
+
+[Buy Ne Anlama Gelir](../forex/buy.md)
+
+[Sell Ne Anlama Gelir](../forex/sell.md)
