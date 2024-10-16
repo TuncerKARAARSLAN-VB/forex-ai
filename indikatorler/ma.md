@@ -4,6 +4,9 @@
 
 Hareketli ortalama, bir finansal varlığın fiyatlarının belirli bir süre boyunca ortalamasını alarak trendleri ve yönleri belirlemek için kullanılan bir teknik analiz aracıdır. Genellikle, piyasalarda alım-satım sinyalleri oluşturmak ve fiyat dalgalanmalarını düzeltmek için kullanılır.
 
+[MA Python Code](ma.py)
+![MA](./images/ma.png)
+
 **Hareketli Ortalama Türleri:**
 
 1. **Basit Hareketli Ortalama (SMA):** Belirli bir dönem içerisindeki fiyatların aritmetik ortalamasını alır.
@@ -13,7 +16,6 @@ Hareketli ortalama, bir finansal varlığın fiyatlarının belirli bir süre bo
    $$
    \text{SMA} = \frac{20 + 22 + 24 + 21 + 23}{5} = \frac{110}{5} = 22
    $$
-
 
    Burada \(P_i\), ilgili dönemdeki fiyatları ve \(n\) ise dönem sayısını ifade eder.
 
@@ -67,6 +69,3 @@ Varsayalım ki son 5 günün kapanış fiyatları: 20, 22, 24, 21, 23
 2. **EMA Hesaplama:** İlk olarak, 5 günlük SMA'yı kullanarak EMA hesaplamaya başlayabilirsiniz. Ardından, gün gün devam edin.
 
 Hareketli ortalamalar, yatırım kararlarınızı desteklemek için güçlü araçlar sunar. Ancak, tek başlarına kullanılmamalıdırlar; diğer göstergelerle ve analizlerle birleştirilmelidir.
-
-[MA Python Code](ma.py)
-![MA](./images/ma.png)
