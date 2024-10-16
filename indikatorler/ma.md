@@ -8,25 +8,28 @@ Hareketli ortalama, bir finansal varlığın fiyatlarının belirli bir süre bo
 
 1. **Basit Hareketli Ortalama (SMA):** Belirli bir dönem içerisindeki fiyatların aritmetik ortalamasını alır.
    
-   \[
-   \text{SMA} = \frac{\sum_{i=1}^{n} P_i}{n}
-   \]
+   Varsayalım ki son 5 günün kapanış fiyatları: 20, 22, 24, 21, 23
+
+   $$
+   \text{SMA} = \frac{20 + 22 + 24 + 21 + 23}{5} = \frac{110}{5} = 22
+   $$
+
 
    Burada \(P_i\), ilgili dönemdeki fiyatları ve \(n\) ise dönem sayısını ifade eder.
 
 2. **Ağırlıklı Hareketli Ortalama (WMA):** Daha yeni fiyatlara daha fazla ağırlık vererek hesaplanır.
 
-   \[
+   $$
    \text{WMA} = \frac{\sum_{i=1}^{n} (P_i \cdot W_i)}{\sum_{i=1}^{n} W_i}
-   \]
+   $$
 
    Burada \(W_i\), ilgili dönemdeki ağırlıkları temsil eder.
 
 3. **Üssel Hareketli Ortalama (EMA):** En son fiyatlara daha fazla ağırlık vererek hesaplanan bir hareketli ortalamadır. EMA, SMA’ya göre daha hızlı tepki verir.
 
-   \[
+   $$
    \text{EMA}_t = \left( \frac{P_t - \text{EMA}_{t-1}}{N} \right) + \text{EMA}_{t-1}
-   \]
+   $$
 
    Burada \(N\), süreyi belirtir (genellikle 2, 5, 10, 20, 50, 100 veya 200 gün olarak seçilir).
 
@@ -57,10 +60,13 @@ Varsayalım ki son 5 günün kapanış fiyatları: 20, 22, 24, 21, 23
 
 1. **SMA Hesaplama:**
 
-   \[
+   $$
    \text{SMA} = \frac{20 + 22 + 24 + 21 + 23}{5} = \frac{110}{5} = 22
-   \]
+   $$
 
 2. **EMA Hesaplama:** İlk olarak, 5 günlük SMA'yı kullanarak EMA hesaplamaya başlayabilirsiniz. Ardından, gün gün devam edin.
 
 Hareketli ortalamalar, yatırım kararlarınızı desteklemek için güçlü araçlar sunar. Ancak, tek başlarına kullanılmamalıdırlar; diğer göstergelerle ve analizlerle birleştirilmelidir.
+
+[MA Python Code](ma.py)
+![MA](./images/ma.png)
