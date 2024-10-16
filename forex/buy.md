@@ -1,1 +1,0 @@
-# Buy Ne Demektir

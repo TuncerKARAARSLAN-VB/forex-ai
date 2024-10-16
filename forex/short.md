@@ -1,0 +1,1 @@
+# Short Pozisyon Ne Demektir

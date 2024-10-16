@@ -1,0 +1,1 @@
+# Long Pozisyon Ne Demektir

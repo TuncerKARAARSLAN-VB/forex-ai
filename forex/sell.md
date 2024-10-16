@@ -1,1 +1,0 @@
-# Sell Ne Demektir
