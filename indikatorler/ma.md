@@ -4,6 +4,9 @@
 
 Hareketli ortalama, bir finansal varlığın fiyatlarının belirli bir süre boyunca ortalamasını alarak trendleri ve yönleri belirlemek için kullanılan bir teknik analiz aracıdır. Genellikle, piyasalarda alım-satım sinyalleri oluşturmak ve fiyat dalgalanmalarını düzeltmek için kullanılır.
 
+[MA Python Code](ma.py)
+![MA](./images/ma.png)
+
 **Hareketli Ortalama Türleri:**
 
 1. **Basit Hareketli Ortalama (SMA):** Belirli bir dönem içerisindeki fiyatların aritmetik ortalamasını alır.
@@ -13,7 +16,6 @@ Hareketli ortalama, bir finansal varlığın fiyatlarının belirli bir süre bo
    $$
    \text{SMA} = \frac{20 + 22 + 24 + 21 + 23}{5} = \frac{110}{5} = 22
    $$
-
 
    Burada \(P_i\), ilgili dönemdeki fiyatları ve \(n\) ise dönem sayısını ifade eder.
 
@@ -68,5 +70,44 @@ Varsayalım ki son 5 günün kapanış fiyatları: 20, 22, 24, 21, 23
 
 Hareketli ortalamalar, yatırım kararlarınızı desteklemek için güçlü araçlar sunar. Ancak, tek başlarına kullanılmamalıdırlar; diğer göstergelerle ve analizlerle birleştirilmelidir.
 
-[MA Python Code](ma.py)
-![MA](./images/ma.png)
+## Saatlikde Ağırlıklı Ortalama
+
+Ağırlıklı ortalamanın daha iyi anlaşılabilmesi için size 3 periyotta grafik ekleyeceğim ve anlamanızı sağlayacağım.
+
+### Period 10
+
+1. Yani hesaplama için şu anda 10 saat geriye git ortalama al
+2. sonraki adımda 1 saat öncesinden başla ve o andan 10 saat geriye doğru verileri alıp ağırlıklı ortalamasını al
+3. sonraki adımda 2 saat öncesinden başla ve o andan 10 saat geriye doğru verileri alıp ağırlıklı ortalamasını al
+
+adımları 100 defa geriye takip et, aslında 100 - 10 = 90 defa geriye takip edip hesapla. ÇÜnkü 91. adımda geri okunabilecek 10 veri kalmayacak.
+
+![alt text](./images/ma-1h-period-10.png)
+
+### Period 30
+
+1. Yani hesaplama için şu anda 30 saat geriye git ortalama al
+2. sonraki adımda 1 saat öncesinden başla ve o andan 30 saat geriye doğru verileri alıp ağırlıklı ortalamasını al
+3. sonraki adımda 2 saat öncesinden başla ve o andan 30 saat geriye doğru verileri alıp ağırlıklı ortalamasını al
+
+adımları 100 defa geriye takip et, aslında 100 - 30 = 70 defa geriye takip edip hesapla. ÇÜnkü 71. adımda geri okunabilecek 30 veri kalmayacak.
+
+![alt text](./images/ma-1h-period-30.png)
+
+### Period 50
+
+1. Yani hesaplama için şu anda 50 saat geriye git ortalama al, 
+2. sonraki adımda 1 saat öncesinden başla ve o andan 50 saat geriye doğru verileri alıp ağırlıklı ortalamasını al
+3. sonraki adımda 2 saat öncesinden başla ve o andan 50 saat geriye doğru verileri alıp ağırlıklı ortalamasını al
+
+adımları 100 defa geriye takip et, aslında 100 - 50 = 50 defa geriye takip edip hesapla. ÇÜnkü 51. adımda geri okunabilecek 10 veri kalmayacak.
+
+![alt text](./images/ma-1h-period-50.png)
+
+## Aralarındaki Fark, Nasıl yorumlamalıyım
+
+Yukarıdaki 3 grafiğe baktığınızda, hesaplamadaki periyod büyüdükçe ortamalama çizgisi ile piyasa çizgisi daha az kesişiyor. Yani bizim için daha doğru piyasaya giriş çıkış verileri üretmeye başlıyor. 10 saatlik ortalama bize sürekli gir çık emirleri üretirken, 50 ortalama çok az sinyal üretiyor. Gün içesindeki başlayan hareketler piyasa koşulları değişmediği sürece aynı davranışları sergiler. Kısaca ne demek istediğime bakalım.
+
+Amerika forex piyasasındali işlem hacminin tek başına %74 gibi işlem hacmine sahip. Diğer %26 tüm forex entrümanları arasında paylaşılıyor. Bizim para birimimiz bu dünyadaki işlem hacminin belkide en küçüklerinden birisi. Aslında forex işlemlerinin işlem hacminin nasıl hesaplandığını inceleyen başka bir dosyayı inceleyerek doğru anlamanızı sağlayabilirsiniz. 
+
+[Forex Piyasasını Etkileyen Faktörler](../forex/forex-piyasasi-işlem-hacmi-nasil-hesaplanir.md)
