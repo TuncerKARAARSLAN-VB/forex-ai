@@ -53,9 +53,7 @@ Forex'te tam lot yerine daha küçük pozisyon büyüklükleriyle işlem yapabil
 Hesaplama yukarıdaki formülle aynıdır, ancak **lot büyüklüğünü** mini veya mikro olarak değiştirirsiniz.
 
 - **EUR/USD'de mikro lot (1,000 birim)**
-  $$
-  \text{Pip Değeri} = \frac{0.0001}{1.2345} \times 1,000 = 0.081 \, \text{USD}
-  $$
+  $$\text{Pip Değeri} = \frac{0.0001}{1.2345} \times 1,000 = 0.081 \, \text{USD}$$
 
    Bu, EUR/USD çiftinde 1 pip hareketin 1 lotluk işlemde 0.81 USD'lik bir değer yarattığı anlamına gelir.
 
@@ -64,9 +62,7 @@ Hesaplama yukarıdaki formülle aynıdır, ancak **lot büyüklüğünü** mini 
    - Lot büyüklüğü: 1 lot (1,000 birim)
    - Pip çapı: 0.01
 
-   $$
-   \text{Pip Değeri} = \frac{0.01}{110.25} \times 1,000 = 0.88 \, \text{USD}
-   $$
+   $$\text{Pip Değeri} = \frac{0.01}{110.25} \times 1,000 = 0.88 \, \text{USD}$$
 
    Bu, USD/JPY çiftinde 1 pip hareketin 1 lotluk işlemde 0.88 USD'lik bir değer yarattığı anlamına gelir.
 
@@ -84,7 +80,5 @@ Bir senaryo oluşturalım ve sen de hesaplamayı yapmayı dene:
 
 - GBP/USD'de mini lot (10,000 birim):
   
-  $$
-  \text{Pip Değeri} = \frac{0.0001}{1.3000} \times 10,000 = 0.769 \, \text{USD}
-  $$
+  $$\text{Pip Değeri} = \frac{0.0001}{1.3000} \times 10,000 = 0.769 \, \text{USD}$$
   
