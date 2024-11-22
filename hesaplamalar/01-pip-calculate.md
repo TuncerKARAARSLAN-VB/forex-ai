@@ -32,9 +32,7 @@ Pip değeri, işlem yapılan döviz çiftinin **lot büyüklüğü** ve piyasa f
    - Lot büyüklüğü: 1 lot (100,000 birim)
    - Pip çapı: 0.0001
 
-   $$
-   \text{Pip Değeri} = \frac{0.0001}{1.2345} \times 100,000 = 8.10 \, \text{USD}
-   $$
+   $$\text{Pip Değeri} = \frac{0.0001}{1.2345} \times 100,000 = 8.10 \, \text{USD}$$
 
    Bu, EUR/USD çiftinde 1 pip hareketin 1 lotluk işlemde 8.10 USD'lik bir değer yarattığı anlamına gelir.
 
@@ -87,6 +85,7 @@ Bir senaryo oluşturalım ve sen de hesaplamayı yapmayı dene:
 **Soru:** Bu durumda 1 pip hareketin değeri nedir?
 
 - GBP/USD'de mini lot (10,000 birim):
+  
   $$
   \text{Pip Değeri} = \frac{0.0001}{1.3000} \times 10,000 = 0.769 \, \text{USD}
   $$
