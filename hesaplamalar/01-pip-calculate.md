@@ -41,9 +41,7 @@ Pip değeri, işlem yapılan döviz çiftinin **lot büyüklüğü** ve piyasa f
    - Lot büyüklüğü: 1 lot (100,000 birim)
    - Pip çapı: 0.01
 
-   $$
-   \text{Pip Değeri} = \frac{0.01}{110.25} \times 100,000 = 9.07 \, \text{USD}
-   $$
+   $$\text{Pip Değeri} = \frac{0.01}{110.25} \times 100,000 = 9.07 \, \text{USD}$$
 
    Bu, USD/JPY çiftinde 1 pip hareketin 1 lotluk işlemde 9.07 USD'lik bir değer yarattığı anlamına gelir.
 
