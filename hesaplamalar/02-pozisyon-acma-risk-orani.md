@@ -217,22 +217,3 @@ public static class ForexCalculator
 
 
 ```
-
----
-
-### **Girişler:**
-
-- Hesap türü: `standart`  
-- Parite: `1.04`  
-- Bakiye: `$100`  
-- Risk: `%3`  
-- Kar/Zarar oranı: `3`  
-- Pozisyon: `long`
-
-### **Çıkış:**
-
-```bash
-Seçtiğiniz lot büyüklüğü için risk tutarınız çok düşük.
-Mevcut lot büyüklüğü (standart) için minimum risk yüzdesi: 9.00%.
-Alternatif olarak, mini lot kullanarak minimum risk yüzdesi: 0.90% ile işlem açabilirsiniz.
-```
