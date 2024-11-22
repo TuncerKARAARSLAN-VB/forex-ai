@@ -149,7 +149,7 @@ class ForexCalculator
 
 ### **Çıkış:**
 
-```
+```bash
 Seçtiğiniz lot büyüklüğü için risk tutarınız çok düşük.
 Mevcut lot büyüklüğü (standart) için minimum risk yüzdesi: 9.00%.
 Alternatif olarak, mini lot kullanarak minimum risk yüzdesi: 0.90% ile işlem açabilirsiniz.
