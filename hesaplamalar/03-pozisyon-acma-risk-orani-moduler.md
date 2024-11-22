@@ -121,6 +121,45 @@
         return new(message, profitUSD, lossUSD);
     }
 
+    CalculateLotAmountWithPositionType(string accountType, decimal exchangeRate, decimal stopLossLevel, decimal riskAmountUSD, string positionType)
+    {
+        // Hesap türüne göre lot büyüklüğünü belirle
+        decimal lotSize = accountType switch
+        {
+            "standart" => 100_000m,
+            "mini" => 10_000m,
+            "mikro" => 1_000m,
+            _ => throw new ArgumentException("Geçersiz hesap türü.")
+        };
+
+        // Pip başına değer
+        decimal pipValuePerLot = (0.0001m / exchangeRate) * lotSize;
+
+        // Pozisyon türüne göre pip farkını hesapla
+        decimal pipDifference = positionType.ToLower() switch
+        {
+            "long" => (exchangeRate - stopLossLevel) / 0.0001m,
+            "short" => (stopLossLevel - exchangeRate) / 0.0001m,
+            _ => throw new ArgumentException("Geçersiz pozisyon türü. 'long' veya 'short' olmalıdır.")
+        };
+
+        // Pip farkı negatifse hata döndür
+        if (pipDifference <= 0)
+        {
+            return ("Stop Loss seviyesi yanlış pozisyon türüyle uyumsuz.", 0m);
+        }
+
+        // Lot miktarını hesapla
+        decimal lotAmount = riskAmountUSD / (pipDifference * pipValuePerLot);
+
+        // Sonuç döndür
+        string message = lotAmount > 0
+            ? "Lot miktarı hesaplama başarılı."
+            : "Hata: Lot miktarı hesaplanamadı.";
+
+        return new(message, lotAmount);
+    }
+
 ```
 
 ---
@@ -176,12 +215,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        accountType = "mini";
-        exchangeRate = 0.58136M;
-        accountBalance = 500m;
+        string accountType = "mini";
+        decimal exchangeRate = 0.58136M;
+        decimal accountBalance = 500m;
         decimal riskAmountUSD = 25m; // USD üzerinden risk miktarı
-        riskRewardRatio = 3f;
-        positionType = "long";
+        float riskRewardRatio = 3f;
+        string positionType = "long";
 
         result = ForexCalculator.CalculateForexLevelsFromAmount(accountType, exchangeRate, accountBalance, riskAmountUSD, riskRewardRatio, positionType);
 
@@ -215,10 +254,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        accountType = "mini";
-        exchangeRate = 0.58179M;
-        accountBalance = 500m;
-        positionType = "long";
+        string accountType = "mini";
+        decimal exchangeRate = 0.58179M;
+        decimal accountBalance = 500m;
+        string positionType = "long";
         decimal stopLossLevel = 0.57990M;
         decimal takeProfitLevel = 0.58416M;
 
@@ -244,4 +283,37 @@ class Program
 Message: Kâr ve zarar hesaplama basarili.
 Profit (USD): 40.74
 Loss (USD): 32.49
+```
+
+### **Örnek 4: CalculateLotAmountWithPositionType**
+
+```csharp
+class Program
+{
+    static void Main(string[] args)
+    {
+        string accountType = "mini";
+        decimal exchangeRate = 0.58179M;
+        string positionType = "long";
+        decimal stopLossLevel = 0.57990M;
+
+        var result3 = ForexCalculator.CalculateLotAmountWithPositionType(
+        accountType: accountType,
+        exchangeRate: exchangeRate,
+        stopLossLevel: stopLossLevel,
+        riskAmountUSD: 10m,
+        positionType: positionType
+        );
+
+        Console.WriteLine($"Message: {result3.Message}");
+        Console.WriteLine($"Lot Amount: {result3.LotAmount:F4}");
+    }
+}
+```
+
+**Çıktı:**
+
+```result
+Message: Lot miktari hesaplama basarili.
+Lot Amount: 0.3078
 ```
