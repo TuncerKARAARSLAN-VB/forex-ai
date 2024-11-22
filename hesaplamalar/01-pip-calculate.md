@@ -89,3 +89,7 @@ Bir senaryo oluşturalım ve sen de hesaplamayı yapmayı dene:
   \[
   \text{Pip Değeri} = \frac{0.0001}{1.3000} \times 10,000 = 0.769 \, \text{USD}
   \]
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
