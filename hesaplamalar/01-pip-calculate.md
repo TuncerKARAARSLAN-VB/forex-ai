@@ -20,10 +20,11 @@ Pip (Price Interest Point) forex piyasasında en küçük fiyat değişim birimi
 Pip değeri, işlem yapılan döviz çiftinin **lot büyüklüğü** ve piyasa fiyatına bağlıdır.
 
 - **Formül:**
-
+$
   \[
   \text{Pip Değeri} = \frac{\text{Pip Çapı (0.0001 veya 0.01)}}{\text{Döviz Kuru}} \times \text{Lot Büyüklüğü (1 lot = 100,000 birim)}
   \]
+  $
 
 ### **Örnek Hesaplamalar:**
 
