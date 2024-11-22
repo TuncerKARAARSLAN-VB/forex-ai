@@ -32,9 +32,9 @@ Pip değeri, işlem yapılan döviz çiftinin **lot büyüklüğü** ve piyasa f
    - Lot büyüklüğü: 1 lot (100,000 birim)
    - Pip çapı: 0.0001
 
-   \[
+   $$\[
    \text{Pip Değeri} = \frac{0.0001}{1.2345} \times 100,000 = 8.10 \, \text{USD}
-   \]
+   \]$$
 
    Bu, EUR/USD çiftinde 1 pip hareketin 1 lotluk işlemde 8.10 USD'lik bir değer yarattığı anlamına gelir.
 
@@ -43,9 +43,9 @@ Pip değeri, işlem yapılan döviz çiftinin **lot büyüklüğü** ve piyasa f
    - Lot büyüklüğü: 1 lot (100,000 birim)
    - Pip çapı: 0.01
 
-   \[
+   $$\[
    \text{Pip Değeri} = \frac{0.01}{110.25} \times 100,000 = 9.07 \, \text{USD}
-   \]
+   \]$$
 
    Bu, USD/JPY çiftinde 1 pip hareketin 1 lotluk işlemde 9.07 USD'lik bir değer yarattığı anlamına gelir.
 
@@ -57,9 +57,9 @@ Forex'te tam lot yerine daha küçük pozisyon büyüklükleriyle işlem yapabil
 Hesaplama yukarıdaki formülle aynıdır, ancak **lot büyüklüğünü** mini veya mikro olarak değiştirirsiniz.
 
 - **EUR/USD'de mikro lot (1,000 birim)**
-  \[
+  $$\[
   \text{Pip Değeri} = \frac{0.0001}{1.2345} \times 1,000 = 0.081 \, \text{USD}
-  \]
+  \]$$
 
    Bu, EUR/USD çiftinde 1 pip hareketin 1 lotluk işlemde 0.81 USD'lik bir değer yarattığı anlamına gelir.
 
@@ -68,9 +68,9 @@ Hesaplama yukarıdaki formülle aynıdır, ancak **lot büyüklüğünü** mini 
    - Lot büyüklüğü: 1 lot (1,000 birim)
    - Pip çapı: 0.01
 
-   \[
+   $$\[
    \text{Pip Değeri} = \frac{0.01}{110.25} \times 1,000 = 0.88 \, \text{USD}
-   \]
+   \]$$
 
    Bu, USD/JPY çiftinde 1 pip hareketin 1 lotluk işlemde 0.88 USD'lik bir değer yarattığı anlamına gelir.
 
@@ -87,10 +87,7 @@ Bir senaryo oluşturalım ve sen de hesaplamayı yapmayı dene:
 **Soru:** Bu durumda 1 pip hareketin değeri nedir?
 
 - GBP/USD'de mini lot (10,000 birim):
-  \[
+  $$\[
   \text{Pip Değeri} = \frac{0.0001}{1.3000} \times 10,000 = 0.769 \, \text{USD}
-  \]
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+  \]$$
+  
