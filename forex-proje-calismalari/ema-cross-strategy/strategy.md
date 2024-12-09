@@ -18,7 +18,7 @@ Buradaki X yine input ile kardan zarar yüzdesine ayarlanabilir.
 
 Bu işlem için en uygun zaman dilimi 5 dakikalık peryotda çalışılmalıdır. Gün içerisinde özellikle dalgalı piyasalarda 2-3 defa derin hareketler oluşur. Bu hareketler yüksek gelirler elde edilmesini sağlar. EMA yerine 3EMA gibi kullanılacak algoritmalar karı arttırırken, gin içerisinde çok fazla alış satım pozisyonunun ortay çıkmasına neden olacaktır. Her yanlış açılan pozisyon kayıplara neden olur. Bu nedenle EMA yerine SMA bile kullanabilir ve hatalı pozisyonların en aza indirilmesi sağlanabilir.
 
-Eğer saatlik ya da 4 saatlik periyotta çalışma istenirse, kardan zarar 0'a çekilmelidir ki, erke pozisyon kapatmaları durumları oluşmasın. Aksi durumda yeniden açılış için kesişim bazen günler sürebilir. 
+Eğer saatlik ya da 4 saatlik periyotta çalışma istenirse, kardan zarar 0'a çekilmelidir ki, erken pozisyon kapatmaları durumları oluşmasın. Aksi durumda yeniden açılış için kesişim bazen günler sürebilir. 
 
 Diğer önemli bir kural ise, eğer pozisyon herhangibir nedenden dolayı kapandığında, kesişim haricinde pozisyona girilmemeli ve risk alınmamalıdır.
 
