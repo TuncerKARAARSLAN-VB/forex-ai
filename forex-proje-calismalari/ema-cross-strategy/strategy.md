@@ -48,7 +48,7 @@ Yani 1000 dolar teminat ile günde 200 dolar ve 22 günde 4400 dolar üzerinde k
 
 Ocak ayı ve elimizde 1000 dolar teminat için paramız var.
 
-0.1 lot işlem açtık, kaldıraç 100. Yani piyasada 10.000 dolarlık işlem açtık ve parabirimi çiftlerinin birbirine göre gün içindeki hareketleri bize kar sağlayacak. Unutmamımız geeken bir nokta daha var. Yılın 12 ayı piyasa bu şekilde çalışmaz. Özellikle yaz aylarında piyasalar daha sakin olur ve bu algoritmayı 1 Harizandan 1 Ekim tarihine kadar kapatmalısınız. Yani 4 ay tatil. Tatil herkesin hakkı. Sizde tatile gidin.
+1 lot işlem açtık, kaldıraç 100. Yani piyasada 100.000 dolarlık işlem açtık ve parabirimi çiftlerinin birbirine göre gün içindeki hareketleri bize kar sağlayacak. Unutmamımız geeken bir nokta daha var. Yılın 12 ayı piyasa bu şekilde çalışmaz. Özellikle yaz aylarında piyasalar daha sakin olur ve bu algoritmayı 1 Harizandan 1 Ekim tarihine kadar kapatmalısınız. Yani 4 ay tatil. Tatil herkesin hakkı. Sizde tatile gidin.
 
 Ocak ayı, günde ortalama %20 net kar. Hafta sonları piyasa kapalı. Yani elimizde 22 gün işlem yapabileceğimiz gün var.
 
@@ -107,7 +107,7 @@ Nisan ayı sonunda kasaya 2.640.000 USD
 **1 Ekim ayında 1000 USD ile piyasaya girdik.**
 **1 Haziranda hesaplarımızda 4.227.200 USD**
 
-Artık yeni yılda piyasaya 100.000 dolar ile girin ve kazancınız 100 kat daha fazla olsun. Ama size tavsiyem artık forex yerine borsa analizleri yapıp 1.000.000 dolarlık borsa yatırımı yapmanız. Uygun fiyatlara büyük arazi yatırımları yapmanız ve kaliteli badem ceviz yatırımları yapmanız. Ama ne olursa olsun tek kişilik bir A.Ş. kurun ve şirketinize önce borç verin, şirketiniz olarak yatırım yapın. Çok uygun fiyatlara aldığınız arazilerinize değer kazandırın. Boş araziyi büyük cennet bahçelerine çevirin. Büyük bir şiftlik sahibi olun. Karınız yıllar içinde kat ve kat büyüsün.
+Artık yeni yılda piyasaya 100.000 dolar ile ve kaldıraç kuvveti 100 olacak şekilde 1.000.000 USD ile işleme girin ve kazancınız 100 kat daha fazla olsun. Ama size tavsiyem artık forex yerine borsa analizleri yapıp 1.000.000 dolarlık borsa yatırımı yapmanız. Uygun fiyatlara büyük arazi yatırımları yapmanız ve kaliteli badem ceviz yatırımları yapmanız. Ama ne olursa olsun tek kişilik bir A.Ş. kurun ve şirketinize önce borç verin, şirketiniz olarak yatırım yapın. Çok uygun fiyatlara aldığınız arazilerinize değer kazandırın. Boş araziyi büyük cennet bahçelerine çevirin. Büyük bir şiftlik sahibi olun. Karınız yıllar içinde kat ve kat büyüsün.
 
 Dikkatli olun, forex çok büyük bir piyasadır ve çok risklidir. Elinizdekileri kaybetmeniz an meselesi. Stratejinize sıkı sıkıya bağlı kalın. Asla maceraya atılmayın. Asla aç gözlü olmayın. Ve unutmayın, piyasada kaybedenler var ki siz kazanıyorsunuz. Bu her zaman böyledir. Mal ticaretinde bile birileri bedel öder. Yani alan ve satan vardır. Forexde kazanan tarafta olmak için iştahınızı kapalı turun. Stratejinize sıkı sıkıya bağlı kalın. Asla riskinizi arttırmayın. Karınızı her zaman dışarıya talımaya devam edin.
 
