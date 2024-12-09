@@ -7,12 +7,18 @@ Bu stratejide iki ema çizgisini birbirini yukarı ya da aşağı yönlü kesti�
 ## **Kurallar**
 
 1. Ne olursaolsun gece 11:00 tüm hesaplar kapatılır. Satın alma yapılmaz.
-2. Satın alma için gece 02:00'den sonra oluşacak keseşimler beklenir.
-3. Her 10 saniyede bir a andaki gelir hesaplanır. Profit negatifse kabul edilebilir max zarar anında pozisyon kapatılır. (Her pozisyon için max zarar 100 dolar için 3-5 dolar alınabilir - input ile risk yüzdesine ayarlanabilir. Açılan pozisyondaki teminat bu rakamlarla hesaplanacak tutar kadar risk hesaplanıp kontrol edilebilir.)
-4. Açık hesaplarda her 10 saniyede bir her pozisyonun  için kar maximum seviyesi hesaplanır. O andaki profit max kardan %X kadar aşağıya inmişse pozisyon kapatılır. Buradaki X yine input ile kardan zarar yüzdesine ayarlanabilir.
-5. EMA 10 ve EMA 20 arasında keseşimler olursa, pozisyon kapatılır ve yeni alım satım emirleri alınır.
+2. Satın alma için gece 02:00'den sonra oluşacak kesişimler beklenir.
+3. Her 10 saniyede bir a andaki gelir hesaplanır. Profit negatifse kabul edilebilir max zarar anında pozisyon kapatılır. 
+`input double _maxLost=5;` işleminde 5 dolar ve üzerindeki zararda pozisyon kapatılır. 
+(Her pozisyon için 100 dolarlık işlemde max zarar 3-5 dolar alınabilir - input ile risk yüzdesine ayarlanabilir. Açılan pozisyondaki teminat bu rakamlarla hesaplanacak tutar kadar risk hesaplanıp kontrol edilebilir.)
+4. Açık hesaplarda her 10 saniyede bir her pozisyonun  için kar maximum seviyesi hesaplanır. 
+O andaki profit max kardan %X kadar aşağıya inmişse pozisyon kapatılır. `input double _maxProfitLossPercent=20;` değeri ile max kardan %20 açağı indiğinde pozisyon kapatılır. Eğer değer 0 ise, kardan zarar kontrolü yapılmaz. Bu durumda keşisimler ile pozisyon kapatılır.
+Buradaki X yine input ile kardan zarar yüzdesine ayarlanabilir.
+5. EMA 10 ve EMA 20 arasında kesişimler olursa, pozisyon kapatılır ve yeni alım emirleri uygulanır.
 
 Bu işlem için en uygun zaman dilimi 5 dakikalık peryotda çalışılmalıdır. Gün içerisinde özellikle dalgalı piyasalarda 2-3 defa derin hareketler oluşur. Bu hareketler yüksek gelirler elde edilmesini sağlar. EMA yerine 3EMA gibi kullanılacak algoritmalar karı arttırırken, gin içerisinde çok fazla alış satım pozisyonunun ortay çıkmasına neden olacaktır. Her yanlış açılan pozisyon kayıplara neden olur. Bu nedenle EMA yerine SMA bile kullanabilir ve hatalı pozisyonların en aza indirilmesi sağlanabilir.
+
+Eğer saatlik ya da 4 saatlik periyotta çalışma istenirse, kardan zarar 0'a çekilmelidir ki, erke pozisyon kapatmaları durumları oluşmasın. Aksi durumda yeniden açılış için kesişim bazen günler sürebilir. 
 
 Diğer önemli bir kural ise, eğer pozisyon herhangibir nedenden dolayı kapandığında, kesişim haricinde pozisyona girilmemeli ve risk alınmamalıdır.
 
