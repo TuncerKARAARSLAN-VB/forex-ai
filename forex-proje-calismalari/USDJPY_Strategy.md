@@ -1,6 +1,6 @@
 # USDJPY Stratejisi
 
-AŞağıdaki kod yukarı çıkacağı tahmin edilen bir piyasa için, önce aşağıya düşüşü, beklenen dip noktasından geri dönüp satın alma yapılması planlanan yukarıdaki çizgiyi geçince alım yapan ve daha üst bir noktayı kırması ile satışı gerçekleştiren kod parçacığıdır.
+Aşağıdaki kod yukarı çıkacağı tahmin edilen bir piyasa için, önce aşağıya düşüşü, beklenen dip noktasından geri dönüp satın alma yapılması planlanan yukarıdaki çizgiyi geçince alım yapan ve daha üst bir noktayı kırması ile satışı gerçekleştiren kod parçacığıdır.
 
 ```
 
