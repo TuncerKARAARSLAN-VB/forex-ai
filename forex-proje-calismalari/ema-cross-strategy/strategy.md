@@ -26,7 +26,7 @@ Diğer önemli bir kural ise, eğer pozisyon herhangibir nedenden dolayı kapand
 
 100 kaldıraçlı piyasalarda 1000 dolarlık bir hesap açıldığında 0.1 lot ile işleme girilerek, günlük 300-500 dolar gelir elde edilebileceği görülür. POzisyondaki yüksek kar girilen piyasanın dalgalı olması ile ilgililidir. Ne kadar dalgalı piyasa ise, kar o kadar yükselecektir. 
 
-Dalgalı piyasa volatalite olan piyasa demektir. Hızlıca [volatile piyasaları bu linkten](https://marketmilk.babypips.com/currency-volatility) inceleyebilirsiniz. 5 dakikalık seçimle o gün hangi piyasalarda yer alacağınız belirleyebilirsiniz.
+Dalgalı piyasa volatalite olan piyasa demektir. Hızlıca [volatile piyasaları marketmilk sayfasında babypips sitesinden](https://marketmilk.babypips.com/currency-volatility) inceleyebilirsiniz. 5 dakikalık seçimle o gün hangi piyasalarda yer alacağınız belirleyebilirsiniz.
 
 ![](./images/ema-cross-2.png)
 
