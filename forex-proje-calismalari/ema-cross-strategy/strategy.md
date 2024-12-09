@@ -6,9 +6,9 @@ Bu stratejide iki ema çizgisini birbirini yukarı ya da aşağı yönlü kesti�
 
 ## **Kurallar**
 
-1. Ne olursaolsun gece 11:00 tüm hesaplar kapatılır. Satın alma yapılmaz.
+1. Ne olursa olsun gece 11:00 tüm hesaplar kapatılır. Satın alma yapılmaz.
 2. Satın alma için gece 02:00'den sonra oluşacak kesişimler beklenir.
-3. Her 10 saniyede bir a andaki gelir hesaplanır. Profit negatifse kabul edilebilir max zarar anında pozisyon kapatılır. 
+3. Her 10 saniyede bir o andaki gelir hesaplanır. Profit negatifse kabul edilebilir max zarar ve daha yüksek zarar oluşmuşsa pozisyon kapatılır. 
 `input double _maxLost=5;` işleminde 5 dolar ve üzerindeki zararda pozisyon kapatılır. 
 (Her pozisyon için 100 dolarlık işlemde max zarar 3-5 dolar alınabilir - input ile risk yüzdesine ayarlanabilir. Açılan pozisyondaki teminat bu rakamlarla hesaplanacak tutar kadar risk hesaplanıp kontrol edilebilir.)
 4. Açık hesaplarda her 10 saniyede bir her pozisyonun  için kar maximum seviyesi hesaplanır. 
