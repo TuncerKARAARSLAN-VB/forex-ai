@@ -9,8 +9,8 @@ Bu stratejide iki ema çizgisini birbirini yukarı ya da aşağı yönlü kesti�
 1. Ne olursa olsun gece 11:00 tüm hesaplar kapatılır. Satın alma yapılmaz.
 2. Satın alma için gece 02:00'den sonra oluşacak kesişimler beklenir.
 3. Her tick anında pozisyonun o andaki gelir hesaplanır. Profit negatifse ve kabul edilebilir max zarar seviyesi ve daha yüksek seviyeye ulaşmışsa pozisyon kapatılır. 
-`input double _maxLost=5;` işleminde 5 dolar ve üzerindeki zararda pozisyon kapatılır. 
-(Her pozisyon için 100 dolarlık işlemde max zarar 3-5 dolar alınabilir - input ile risk yüzdesine ayarlanabilir. Açılan pozisyondaki teminat bu rakamlarla hesaplanacak tutar kadar risk hesaplanıp kontrol edilebilir.)
+`input double _maxLost=50;` işleminde 50 dolar ve üzerindeki zararda pozisyon kapatılır. 
+(Her pozisyon için 1000 dolarlık işlemde max zarar % 3-5 seviyesinde bir sabit rakam alınabilir. input ile risk yüzdesine ayarlanabilir. Açılan pozisyondaki teminat bu rakamlarla hesaplanacak tutar kadar risk hesaplanıp kontrol edilebilir.)
 4. Açık hesaplarda her 10 saniyede bir her pozisyonun  için kar maximum seviyesi hesaplanır. 
 O andaki profit max kardan %X kadar aşağıya inmişse pozisyon kapatılır. `input double _maxProfitLossPercent=20;` değeri ile max kardan %20 aşağı indiğinde pozisyon kapatılır. Eğer değer 0 ise, kardan zarar kontrolü yapılmaz. Bu durumda keşisimler ile pozisyon kapatılır.
 Buradaki X yine input ile kardan zarar yüzdesine ayarlanabilir.
